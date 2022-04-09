@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <title>membuat sidebar</title>
+         <link  rel="stylesheet" type="text/css" href="asset/css/style.css">
+         
+     </head>
+     
+     <body>
+         <section class="atas">
+            <div class="bar">    
+                <a href="#" onclick="buka()">
+                    <img class="nav" src="asset/img/logo-nav.png">
+                </a>
+                
+                <head class="top">
+                    <h2>MY WEBSITE</h2>
+                </head>
+            </div>
+         </section>
+        <section>
+           <nav id="sidebar">
+               <header>NAVBAR</header>
+               <a href="#" onclick="keluar()">
+                    <img id="out" src="asset/img/logo-close.png">
+                </a>
+                 <ul>
+                     <li class="list-bar"><a href="#"><i>HOME</i></a></li>
+                     <li class="list-bar"><a href="#"><i>TUTORIAL</i></a></li>
+                     <li class="list-bar"><a href="#"><i>ABOUT</i></a></li>
+                     <li class="list-bar"><a href="#"><i>CONTACT</i></a></li>
+                     <li class="list-bar"><a href="#"><i>HELP</i></a></li>
+                 </ul>
+            </nav>
+        </section>
+        <section>
+            <div id="getaran">
+                <h3>klik tombol berikut</h3>
+                <div class="ruang">
+                    <button onclick="getaran(1000)">getarkan</button>
+                    <button onclick="getaran([1000, 500< 1000])">getarkan 2x</button>
+                    <button onclick="getaran([200, 500, 300, 100, 400])">getarkan 3x</button>
+                </div>            
+            </div>
+        </section>
+        <script src="asset/js/script.js"></script>
+     </body>
+ </html>
